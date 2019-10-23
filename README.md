@@ -1,4 +1,4 @@
-# Vue Ecommerce
+# Pokedex
 
 ## Project published link
 https://joaovjusto.github.io/vue-ecommerce/
@@ -32,6 +32,11 @@ yarn run lint
 ```
 yarn run test:unit
 ```
+
+### Run to prod
+...
+
+yarn run --prod
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
