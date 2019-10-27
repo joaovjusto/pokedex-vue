@@ -1,10 +1,10 @@
 <template>
 <div id="header-style">
   <div class="row" id="header-border">
-    <div class="col-xl-3">
+    <div class="col-md-3 col-xl-3">
       <img src="../assets/img/logo.svg" class="pointer" alt="">
     </div>
-    <div class="col-xl-9 text-right" id="components-header">
+    <div class=" col-md-9 col-xl-9 text-right" id="components-header">
       <ul>
         <li class="active">
           Dashboard
@@ -57,7 +57,11 @@ export default {
 #header-border .col-xl-3 {
   display: flex;
 }
-
+@media only screen and (max-width: 770px) {
+ #components-header {
+   display: none;
+ }
+}
 #components-header ul {
   padding-top: 37px;
 }

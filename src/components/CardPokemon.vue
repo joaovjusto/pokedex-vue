@@ -1,6 +1,6 @@
 <template>
-<div class="col-xl-2">
-  <div class="card">
+<div class="col-12 col-sm-6 col-md-4 col-xl-2">
+  <div class="card" @click="openModal(pokemonData)">
     <!-- <img src="..." class="card-img-top" alt="..."> -->
     <div class="card-body">
       <img width="25%" :id="this.indexPokemon" :ref="this.indexPokemon" :src="this.pokemonData.sprites.front_default" alt="">
@@ -10,7 +10,7 @@
           {{status.name}}
         </span>
       </div>
-      <div class="card-hover pointer" @click="openModal(pokemonData)">
+      <div class="card-hover pointer" >
         <span>ver mais</span>
       </div>
     </div>
@@ -25,6 +25,7 @@ import pokemon from "../services/pokemon";
 export default {
   name: "CardPokemon",
   mixins: [pokemon],
+
   props: ['stats', 'index'],
   data() {
     return {
@@ -60,7 +61,8 @@ export default {
   },
   methods: {
     openModal(item) {
-      console.log(item)
+      this.$store.commit("SET_POKEMONDATA_STATUS", item);
+      this.$store.commit("SET_SHOWMODAL_STATUS", true);
     }
   }
 };
@@ -89,10 +91,12 @@ export default {
   transition: all 0.3s linear;
 }
 
-.card:hover .card-hover {
-  /* display: flex; */
-  visibility: visible;
-  opacity: 1;
+@media only screen and (min-width: 1200px) {
+  .card:hover .card-hover {
+    /* display: flex; */
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .text-center {

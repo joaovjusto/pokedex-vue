@@ -16,9 +16,13 @@ button:focus {
 .transition-smooth {
   transition: all 0.3s linear;
 }
+@media only screen and (max-width: 770px) {
+  #page-container {
+    padding-bottom: 80px;
+  }
+}
 #page-container {
   padding-top: 100px;
-  padding-left: 80px;
 }
 .pointer {
   cursor: pointer;

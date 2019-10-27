@@ -2,11 +2,12 @@
 <div id="app" v-loading.fullscreen.lock="$store.getters.carregando">
   <div class="container-fluid">
     <Header />
-    <MenuLateral/>
+    <MenuLateral />
     <div id="page-container">
       <router-view class="fade-in" />
     </div>
   </div>
+  <DialogPokemon/>
 </div>
 </template>
 
@@ -14,14 +15,14 @@
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
 import MenuLateral from "@/components/MenuLateral.vue";
-// import Loading from "@/components/Loading.vue";
+import DialogPokemon from "@/components/DialogDetail.vue";
 
 export default {
   name: "app",
   components: {
+    DialogPokemon,
     Header,
-    MenuLateral,
-    // Loading
+    MenuLateral
   }
 };
 </script>
@@ -30,6 +31,7 @@ export default {
 #app {
   margin-bottom: 20px;
 }
+
 .fade-in {
   -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;

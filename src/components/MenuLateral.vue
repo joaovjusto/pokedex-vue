@@ -9,20 +9,20 @@
       </button>
     </li>
     <li>
-      <img src="../assets/icons/energy.svg" alt="">
-      <span v-if="hamburguerBool">Lorem Ipsum Dolor</span>
+      <!-- <img src="../assets/icons/energy.svg" alt=""> -->
+      <span v-if="hamburguerBool">Dashboard</span>
     </li>
     <li>
-      <img src="../assets/icons/energy.svg" alt="">
-      <span v-if="hamburguerBool">Teste de menu</span>
+      <!-- <img src="../assets/icons/energy.svg" alt=""> -->
+      <span v-if="hamburguerBool">Habilidades</span>
     </li>
     <li>
-      <img src="../assets/icons/energy.svg" alt="">
-      <span v-if="hamburguerBool">Teste 2</span>
+      <!-- <img src="../assets/icons/energy.svg" alt=""> -->
+      <span v-if="hamburguerBool">Regiões</span>
     </li>
     <li>
-      <img src="../assets/icons/shutdown.svg" alt="">
-      <span v-if="hamburguerBool">Sair</span>
+      <!-- <img src="../assets/icons/shutdown.svg" alt=""> -->
+      <span v-if="hamburguerBool">Principais Jogos</span>
     </li>
   </ul>
 </div>
@@ -33,24 +33,33 @@ export default {
   data() {
     return {
       hamburguerBool: false,
-      classHamburguer: 'hamburger hamburger--collapse',
-      activeIndex: "1",
-      activeIndex2: "1"
+      classHamburguer: 'hamburger hamburger--collapse'
     };
   },
   mounted() {
-    $('.transition-smooth').mouseenter(() => {
-      $('.transition-smooth').stop().toggleClass('menu-animation');
-      $('.transition-smooth').stop().toggleClass('menu-lateral');
-      this.classHamburguer = 'hamburger hamburger--collapse is-active';
-      this.hamburguerBool = !this.hamburguerBool;
+    $(".hamburger").on('click', () => {
+      if(this.hamburguerBool) {
+        this.classHamburguer = 'hamburger hamburger--collapse';
+        this.hamburguerBool = !this.hamburguerBool
+        $('.transition-smooth').stop().toggleClass('height-full');
+      }else {
+        this.classHamburguer = 'hamburger hamburger--collapse is-active';
+        this.hamburguerBool = !this.hamburguerBool
+        $('.transition-smooth').stop().toggleClass('height-full');
+      }
     })
-    $('.transition-smooth').mouseleave(() => {
-      $('.transition-smooth').stop().toggleClass('menu-animation');
-      $('.transition-smooth').stop().toggleClass('menu-lateral');
-      this.classHamburguer = 'hamburger hamburger--collapse';
-      this.hamburguerBool = !this.hamburguerBool;
-    });
+    // $('.transition-smooth').mouseenter(() => {
+    //   $('.transition-smooth').stop().toggleClass('menu-animation');
+    //   $('.transition-smooth').stop().toggleClass('menu-lateral');
+    //   this.classHamburguer = 'hamburger hamburger--collapse is-active';
+    //   this.hamburguerBool = !this.hamburguerBool;
+    // })
+    // $('.transition-smooth').mouseleave(() => {
+    //   $('.transition-smooth').stop().toggleClass('menu-animation');
+    //   $('.transition-smooth').stop().toggleClass('menu-lateral');
+    //   this.classHamburguer = 'hamburger hamburger--collapse';
+    //   this.hamburguerBool = !this.hamburguerBool;
+    // });
   },
   methods: {
     handleSelect(key, keyPath) {
@@ -62,6 +71,20 @@ export default {
 
 <style scoped>
 /* Estilo menu lateral */
+.height-full {
+  height: 100% !important;
+  border-radius: 0 !important;
+}
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  .menu {
+    display: block;
+  }
+}
+
 .menu-animation {
   width: 200px !important;
 }
@@ -82,16 +105,17 @@ export default {
 
 .menu {
   position: fixed;
-  top: 100px;
+  bottom: 0;
   z-index: 1;
   left: 0;
-  width: 65px;
-  height: calc(100% - 100px);
+  width: 100%;
+  height: 60px;
   background: linear-gradient(0deg, rgba(97, 104, 244, 1) 0%, rgba(96, 64, 166, 1) 100%);
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .menu span {
+  font-size: 24px;
   color: rgba(255, 255, 255, 0.57);
   margin-left: 10px;
   transition: all 0.3s linear;
