@@ -23,8 +23,6 @@ Vue.config.productionTip = false;
 
 Vue.http.options.root = "https://pokeapi.co/api/v2/pokemon/";
 
-Vue.config.productionTip = false;
-
 new Vue({
   router,
   store,

@@ -14,12 +14,14 @@
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
 import MenuLateral from "@/components/MenuLateral.vue";
+// import Loading from "@/components/Loading.vue";
 
 export default {
   name: "app",
   components: {
     Header,
-    MenuLateral
+    MenuLateral,
+    // Loading
   }
 };
 </script>

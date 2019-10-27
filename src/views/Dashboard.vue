@@ -7,11 +7,13 @@
   </div>
   <div class="col-12">
     <div class="form-row">
-      <!-- <CardPokemon v-for="(item,index) in items" :key="index" /> -->
       <CardPokemon v-for="(item,index) in items" :key="index" />
     </div>
     <div class="main-title">
       <h3>Consulta Pokémon</h3>
+    </div>
+    <div class="form-row">
+      <CardPokemon v-for="(item,index) in items" :key="index" />
     </div>
   </div>
 </div>
@@ -30,13 +32,24 @@ export default {
   data() {
     return {
       pokemonData: '',
+      pokemonAll: '',
       items: [1, 2, 3, 4, 5, 6],
     };
   },
-  mounted() {
-    this.getPerId("8");
-    this.pokemonData = this.$store.state.pokemonData;
+  created() {
+    this.getPerId("8").then(
+      this.pokemonData = this.$store.state.pokemonData
+    );
+    this.getAll().then(
+      this.pokemonAll = this.$store.state.pokemonAll
+    );
   },
+  mounted() {
+
+  },
+  methods: {
+    
+  }
 };
 </script>
 
