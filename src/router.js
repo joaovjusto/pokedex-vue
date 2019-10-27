@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Principal from "./views/Principal.vue";
+import Dashboard from "./views/Dashboard.vue";
 
 Vue.use(Router);
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "principal",
-      component: Principal
+      name: "dashboard",
+      component: Dashboard
     }
     // {
     // path: "/about",

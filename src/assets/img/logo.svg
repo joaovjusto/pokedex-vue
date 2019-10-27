@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="199.668" height="43.267" viewBox="0 0 199.668 43.267">
+  <g id="Group_64" data-name="Group 64" transform="translate(-19.933 -36)">
+    <path id="Path_9" data-name="Path 9" d="M0,0H156.81" transform="translate(41.5 36.5)" fill="none" stroke="#fff" stroke-width="0.8"/>
+    <g id="Group_63" data-name="Group 63">
+      <text id="Masters_Pokémon" data-name="Masters Pokémon" transform="translate(57 64)" fill="#202020" font-size="16" font-family="HoboStd, Hobo Std"><tspan x="0" y="0">Masters Pokémon</tspan></text>
+      <g id="pokeball_copy" data-name="pokeball copy" transform="translate(19.933 36)">
+        <path id="Path_3" data-name="Path 3" d="M41.046,20.523A20.523,20.523,0,0,0,0,20.523Z" transform="translate(0.708 41.839) rotate(-90)" fill="#ee5281"/>
+        <path id="Path_4" data-name="Path 4" d="M43.021,21.938H0V21.23A21.4,21.4,0,0,1,21.51,0a21.4,21.4,0,0,1,21.51,21.23ZM1.446,20.523H41.574a20.088,20.088,0,0,0-40.128,0Z" transform="translate(0 43.106) rotate(-90)"/>
+        <path id="Path_5" data-name="Path 5" d="M41.825,0A20.912,20.912,0,0,1,20.913,20.913,20.912,20.912,0,0,1,0,0Z" transform="translate(178.034 42.546) rotate(-90)" fill="#fff"/>
+        <path id="Path_6" data-name="Path 6" d="M21.634,22.355A21.658,21.658,0,0,1,0,.721.721.721,0,0,1,.721,0H42.546a.721.721,0,0,1,.721.721A21.658,21.658,0,0,1,21.634,22.355ZM1.455,1.442a20.192,20.192,0,0,0,40.358,0Z" transform="translate(177.313 43.267) rotate(-90)"/>
+        <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="7.785" cy="7.785" rx="7.785" ry="7.785" transform="translate(13.446 29.1) rotate(-90)" fill="#777"/>
+        <path id="Path_7" data-name="Path 7" d="M8.492,16.984a8.492,8.492,0,1,1,8.492-8.492A8.5,8.5,0,0,1,8.492,16.984Zm0-15.569a7.077,7.077,0,1,0,7.077,7.077A7.085,7.085,0,0,0,8.492,1.415Z" transform="translate(12.738 29.808) rotate(-90)"/>
+        <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="4.954" cy="4.954" rx="4.954" ry="4.954" transform="translate(16.277 26.27) rotate(-90)" fill="#fff"/>
+        <path id="Path_8" data-name="Path 8" d="M5.662,11.323a5.661,5.661,0,1,1,5.661-5.661A5.668,5.668,0,0,1,5.662,11.323Zm0-9.908A4.246,4.246,0,1,0,9.908,5.661,4.251,4.251,0,0,0,5.662,1.415Z" transform="translate(15.569 26.977) rotate(-90)"/>
+      </g>
+    </g>
+    <path id="Path_9-2" data-name="Path 9" d="M0,0H156.81" transform="translate(41.5 36.5)" fill="none" stroke="#000" stroke-width="0.8"/>
+    <line id="Line_7" data-name="Line 7" x2="156" transform="translate(41.5 78.5)" fill="none" stroke="#000" stroke-width="1.2"/>
+  </g>
+</svg>

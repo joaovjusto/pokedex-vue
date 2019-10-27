@@ -1,32 +1,26 @@
 <template>
-  <div>
-    <!-- <el-menu
-      :default-active="activeIndex"
-      class="el-menu-demo"
-      mode="horizontal"
-      @select="handleSelect"
-    >
-      <el-menu-item index="1">Processing Center</el-menu-item>
-      <el-submenu index="2">
-        <template slot="title">Workspace</template>
-        <el-menu-item index="2-1">item one</el-menu-item>
-        <el-menu-item index="2-2">item two</el-menu-item>
-        <el-menu-item index="2-3">item three</el-menu-item>
-        <el-submenu index="2-4">
-          <template slot="title">item four</template>
-          <el-menu-item index="2-4-1">item one</el-menu-item>
-          <el-menu-item index="2-4-2">item two</el-menu-item>
-          <el-menu-item index="2-4-3">item three</el-menu-item>
-        </el-submenu>
-      </el-submenu>
-      <el-menu-item index="3" disabled>Info</el-menu-item>
-      <el-menu-item index="4">
-        <a href="https://www.ele.me" target="_blank">Orders</a>
-      </el-menu-item>
-    </el-menu>-->
+<div class="row" id="header-border">
+  <div class="col-xl-3">
+    <img src="../assets/img/logo.svg" class="pointer" alt="">
   </div>
+  <div class="col-xl-9 text-right" id="components-header">
+    <ul>
+      <li class="active">
+        Dashboard
+      </li>
+      <li>
+        Habilidades
+      </li>
+      <li>
+        Regiões
+      </li>
+      <li>
+        Principais Jogos
+      </li>
+    </ul>
+  </div>
+</div>
 </template>
-
 
 <script>
 export default {
@@ -43,3 +37,35 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  /* Estilo Header */
+  #header-border{
+    border-bottom: 1px solid #c2c2c2;
+    height: 100px;
+  }
+  #header-border .col-xl-3{
+    display: flex;
+  }
+  #components-header ul {
+    padding-top: 37px;
+  }
+  #components-header ul li {
+    font-size: 20px;
+    color: #959595;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.3s linear;
+  }
+  #components-header ul li.active, #components-header ul li:hover {
+    font-size: 21px;
+    color: #6168f4;
+    border-bottom: 2px solid #6168f4;
+  }
+  #components-header ul li:last-child {
+    margin-right: 0;
+  }
+/* Fim Estilo Header */
+</style>

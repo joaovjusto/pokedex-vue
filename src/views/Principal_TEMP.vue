@@ -101,7 +101,7 @@
 </template>
 
 <script>
-const content = require("../content/products.json");
+// const content = require("../content/products.json");
 
 export default {
   name: "principal",
