@@ -17,6 +17,7 @@ button:focus {
   transition: all 0.3s linear;
 }
 #page-container {
+  padding-top: 100px;
   padding-left: 80px;
 }
 .pointer {

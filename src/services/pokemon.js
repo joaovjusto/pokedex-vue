@@ -5,7 +5,7 @@ export default {
       this.$http.get(id).then(
         res => {
           // eslint-disable-next-line no-console
-          console.log(res.body);
+          // console.log(res.body);
           this.$store.commit("SET_POKEMONDATA_STATUS", res.body);
           this.$store.commit("SET_LOADING_STATUS", false);
           this.pokemonData = res.body;
@@ -18,11 +18,11 @@ export default {
         }
       );
     },
-    async getAll() {
-      this.$http.get("").then(
+    async getAll(url) {
+      this.$http.get(url).then(
         res => {
           // eslint-disable-next-line no-console
-          console.log(res.body);
+          // console.log(res.body);
           this.$store.commit("SET_POKEMONALL_STATUS", res.body);
           this.$store.commit("SET_LOADING_STATUS", false);
           this.pokemonAll = res.body;
