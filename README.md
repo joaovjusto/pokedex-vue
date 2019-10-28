@@ -1,21 +1,22 @@
 # Pokedex
 
 ## Project published link
-https://joaovjusto.github.io/vue-ecommerce/
+https://joaovjusto.github.io/pokedex-vue
 
 ## Project setup
 ```
 yarn install
+yarn install jQuery
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+yarn build
 ```
 
 ### Run your tests
