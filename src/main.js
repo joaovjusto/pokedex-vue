@@ -21,7 +21,7 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
 
-Vue.http.options.root = "https://pokeapi.co/api/v2/pokemon/";
+Vue.http.options.root = process.env.VUE_APP_ROOT;
 
 new Vue({
   router,
