@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 module.exports = {
-  // publicPath: "<loja-teste>",
+  publicPath: "pokedex-vue",
   configureWebpack: {
     plugins: [
       new webpack.ProvidePlugin({
